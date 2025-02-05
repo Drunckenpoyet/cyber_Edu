@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber_Edu.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber_Edu</h1>
+    </header>
+    <nav>
+        <a href="Courses.html" class="nav-button">Courses</a>
+        <a href="about.html" onclick="scrollToSection('about')" class="nav-button">About</a>
+        <a href="contact.html" onclick="scrollToSection('contact')" class="nav-button">Contact</a>
+
+    </nav>
+    <div class="container">
+        <section id="courses" class="card">
+            <h2><button onclick="location.href='Courses.html'" class="card-button">Our Courses</button></h2>
+            <p>Explore our wide range of educational courses.</p>
+        </section>
+        <section id="about" class="card">
+            <h2><button onclick="location.href='about.html'" class="card-button">About Us</button></h2>
+            <p>Learn more about our mission and values.</p>
+        </section>
+        <section id="contact" class="card">
+            <h2><button onclick="location.href='contact.html'" class="card-button">Contact Us</button></h2>
+            <p>Get in touch for more information.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cyber_Edu. All rights reserved to Cyber_Edu..</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

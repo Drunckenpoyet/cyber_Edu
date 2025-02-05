@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #87ea87;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(2, 132, 119);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+header:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the background slightly on hover */
+}
+
+header h1 {
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #ffcc41;
+}
+header {
+    background-image: url('a1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #1e261d;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(247, 240, 240);
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Buttons inside the container */
+button {
+    background: #038187;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #026b68;
+    transform: scale(1.1);
+}
+
+/* Hovering over NAV should affect all buttons */
+nav:hover button {
+    background: #ff6600;  /* Change color when nav is hovered */
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Main content container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    background: #000000;
+    color: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card h2:hover {
+    background: #038187;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #62efd0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
